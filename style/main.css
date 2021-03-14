@@ -1,0 +1,199 @@
+:root{
+    --vermelho:#E50914;
+    --preta:#141414;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/*elementos base*/
+body{
+   background: var(--preta);
+   font-family: 'Arial', Times, serif;
+   color:white;
+}
+
+
+header .container{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+
+header .logo{
+    margin-left: 10px;
+   /* margin-right: 30px;*/
+    color: var(--vermelho);
+    font-family: 'Gothan', Times;
+    font-size:40px;
+
+}
+
+header img{
+    float: right;
+
+}    
+
+
+header nav a{
+    text-decoration:none;
+    color:#AAA;
+    margin-right: 10px;
+}
+
+
+header nav a:hover{
+    color:#fff;
+}
+
+/*filme principal*/
+.filme-principal{
+    font-size:16px;
+    background-image:  url('../img/capa-ptso.jpg');
+    /*linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.15)100%),*/
+    height:900px;
+    background-size:cover;
+    
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+.filme-principal .descricao{
+    margin-top: 50px;
+    margin-bottom: 40px;
+    font-size: 28px;
+    margin-left: 50px;
+
+}
+
+
+.filme-principal .titulo{
+    margin-top: 15%;
+    font-size: 60px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color:#3CB371;
+    margin-left: 50px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.botoes{
+    margin-left: 40px;
+}
+
+.botao{
+    font-weight: bolder;
+    margin-left: 10px;
+    background-color: white ;
+    border:none;
+    color: black bolder;
+
+    padding:20px 35px;
+    
+    font-size: 15px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+    border-radius: 5px;
+} 
+.botao:hover{
+    background-color:rgba(0,0,0,.50);
+    color:black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+
+.container{
+    margin-left: 20px;
+}
+
+.carrosel-filmes{
+    
+    margin-top: -80px;
+    font-size: 28px;
+    margin-left: 60px;
+    
+
+}
+
+.box-filme{
+    width: 100%;
+    height: 100%;
+    display: block;
+    cursor: pointer;
+    overflow: hidden;
+    border: 2px solid #000;
+}
+/*tentar dar zoom na imagem*/
+.box-filme img {
+   max-width: 100%;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.box-filme img:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.originais{
+    font-size: 28px;
+    margin-left: 60px;
+    font-size: 28px;
+    height: 50%;
+    width: auto;
+
+}
+
+.listagem{
+    display: block;
+    cursor: pointer;
+    
+}
+
+.emalta{
+    font-size: 28px;
+    margin-left: 60px;
+}
+
+.listagem2{
+    
+    width: 100%;
+    height: 50%;
+    cursor: pointer;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
